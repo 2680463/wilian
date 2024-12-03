@@ -1,0 +1,82 @@
+! <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>cacahuate</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0;
+        }
+        body{
+            perspective: 1200px;
+        }
+        
+        .tarjeta {
+            width: 400px;
+            height: 500px;
+            margin: auto;
+            transform-style: preserve-3d;
+            margin-top: 100px;
+            border: 2px solid green;
+            position: relative;
+            transition: rotate 0.6s ease-in-out;
+            &:hover {
+                rotate: y 180deg;
+            }
+            .caraA, .caraB {
+                backface-visibility: hidden;
+            }
+            .caraA {
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+            .caraB {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: brown;
+                padding: 10px;
+                height: 100%;
+                rotate: y 180deg;
+                h1{
+                    color: white;
+                    text-align: center;
+                    letter-spacing: 2px;
+
+                }
+                p{
+                    letter-spacing: 2px;
+                    color: khaki;
+                    line-height: 24px;
+                    font-size: 18px;
+                    text-align: center;
+                    margin-top: 15px;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tarjeta">
+        <div class="caraA">
+            <img src="aguacate.png" alt="">
+        </div>
+        
+    <div class="caraB">
+        <div class="contenido">
+            <h1>aguacate</h1>
+            <p>El aguacate es un fruto versátil y nutritivo originario de Mesoamérica, conocido científicamente como Persea americana. Tiene una textura cremosa y un sabor suave que lo hace popular en muchas cocinas alrededor del mundo. Aquí algunos aspectos clave del aguacate:
+
+            </p>
+        </div>
+    </div>
+    >
+</body>
+</html>
